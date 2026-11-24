@@ -19,4 +19,4 @@ Hands-on practice repository documenting my journey learning modern frontend dev
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/https://github.com/MarkoGarado/react-learning.git
+   git clone /https://github.com/MarkoGarado/react-learning.git
