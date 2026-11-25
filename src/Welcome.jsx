@@ -1,5 +1,7 @@
-
-export const Welcome = () => {
-  return <h2>Welcome!</h2>
-}
-
+export const Welcome = ({ name, status }) => {
+  return (
+    <h2>
+      Welcome, {name} is {status}!
+    </h2>
+  );
+};
