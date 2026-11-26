@@ -16,8 +16,17 @@ import "./index.css";
 function App() {
   return (
     <div>
-      <UserDetails name="Spiderman" isOnline={true} />
-      <UserDetails name="Captain America" isOnline={false} hideOffline={true} />
+      <UserDetails
+        name="Spiderman"
+        isOnline={true}
+        isPremium={true}
+        isNew={true}
+      />
+      <UserDetails
+        name="Captain America"
+        isOnline={false}
+        hideOffline={false}
+      />
 
       {/* <CardWrapper title="Personal Details:">
         <p>Black America</p>

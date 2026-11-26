@@ -1,12 +1,22 @@
-export const UserDetails = ({ name, isOnline, hideOffline }) => {
+export const UserDetails = ({
+  name,
+  isOnline,
+  hideOffline,
+  isPremium,
+  isNew,
+}) => {
   if (hideOffline && !isOnline) {
     return null;
   }
 
-  //rendering using ternary ? operator
+  //rendering using && operator
   return (
     <div>
-      <h2>{name}</h2>
+      <h2>
+        {name}
+        {isPremium && "👑"}
+        {isNew && "✪"}
+      </h2>
       <p>{isOnline ? "Online ✅" : "Offline ❌"}</p>
       {isOnline ? (
         <button id="btn-id">Send a message</button>
