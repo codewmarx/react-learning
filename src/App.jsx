@@ -9,10 +9,19 @@ import { Product } from "./Product";
 import { StyledForm } from "./StyledForm";
 import { Greeting } from "./Greeting";
 import { UserCard } from "./UserCard";
+import { CardWrapper } from "./CardWrapper";
+import "./index.css";
 
 function App() {
   return (
     <div>
+      <CardWrapper title="Personal Details:">
+        <p>Black America</p>
+        <p>Mamba</p>
+        <p>Deceased</p>
+        <button id="btn-id">Edit Profile</button>
+      </CardWrapper>
+
       <UserCard id={10} age={22} email="garado602@gmail.com" address="Canada" />
 
       <Greeting message="Greetings" name="Wanda" />
