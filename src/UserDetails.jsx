@@ -4,11 +4,18 @@ export const UserDetails = ({
   hideOffline,
   isPremium,
   isNew,
+  role,
 }) => {
   if (hideOffline && !isOnline) {
     return null;
   }
 
+  let roleBadge = null;
+  if (role === "admin") {
+    roleBadge = <span>♛ Admin</span>;
+  } else if ((role = "vip")) {
+    roleBadge = <span>💎 VIP</span>;
+  }
   //rendering using && operator
   return (
     <div>
@@ -16,6 +23,7 @@ export const UserDetails = ({
         {name}
         {isPremium && "👑"}
         {isNew && "✪"}
+        {roleBadge}
       </h2>
       <p>{isOnline ? "Online ✅" : "Offline ❌"}</p>
       {isOnline ? (

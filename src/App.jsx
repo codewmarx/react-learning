@@ -21,11 +21,14 @@ function App() {
         isOnline={true}
         isPremium={true}
         isNew={true}
+        role="vip"
       />
       <UserDetails
         name="Captain America"
-        isOnline={false}
-        hideOffline={false}
+        isOnline={true}
+        hideOffline={true}
+        isPremium={true}
+        role="admin"
       />
 
       {/* <CardWrapper title="Personal Details:">
