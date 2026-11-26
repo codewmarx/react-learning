@@ -8,10 +8,13 @@ import { CandidateProfile } from "./CandidateProfile";
 import { Product } from "./Product";
 import { StyledForm } from "./StyledForm";
 import { Greeting } from "./Greeting";
+import { UserCard } from "./UserCard";
 
 function App() {
   return (
     <div>
+      <UserCard id={10} age={22} email="garado602@gmail.com" address="Canada" />
+
       <Greeting message="Greetings" name="Wanda" />
       <Greeting name="Dr. Strange" />
       <Greeting message="Good Day" />
