@@ -10,12 +10,16 @@ import { StyledForm } from "./StyledForm";
 import { Greeting } from "./Greeting";
 import { UserCard } from "./UserCard";
 import { CardWrapper } from "./CardWrapper";
+import { UserDetails } from "./UserDetails";
 import "./index.css";
 
 function App() {
   return (
     <div>
-      <CardWrapper title="Personal Details:">
+      <UserDetails name="Spiderman" isOnline={true} />
+      <UserDetails name="Captain America" isOnline={false} hideOffline={true} />
+
+      {/* <CardWrapper title="Personal Details:">
         <p>Black America</p>
         <p>Mamba</p>
         <p>Deceased</p>
@@ -44,7 +48,7 @@ function App() {
       <Contact />
       <UserProfile />
       <Hello />
-      <Button />
+      <Button /> */}
     </div>
   );
 }
