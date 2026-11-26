@@ -7,10 +7,16 @@ import { Contact } from "./ContactForm";
 import { CandidateProfile } from "./CandidateProfile";
 import { Product } from "./Product";
 import { StyledForm } from "./StyledForm";
+import { Greeting } from "./Greeting";
 
 function App() {
   return (
     <div>
+      <Greeting message="Greetings" name="Wanda" />
+      <Greeting name="Dr. Strange" />
+      <Greeting message="Good Day" />
+      <Greeting />
+
       <Welcome name="Dr.Doom" status="Angry" />
       <Welcome name="Thor" status="Anxious" />
 
