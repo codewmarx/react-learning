@@ -15,9 +15,18 @@ export const RoleLists = () => {
       name: "Service Desk Engineer",
       salary: 50000,
     },
+    {
+      id: 3,
+      name: "Engineer",
+      salary: 25000,
+    },
   ];
 
-  const roleElements = roles.map((designation) => {
+  const range = roles.filter(
+    (designation) => designation.salary >= 30000 && designation.salary < 46000,
+  );
+
+  const roleElements = range.map((designation) => {
     return (
       <div>
         <h3>Role: {designation.name}</h3>
