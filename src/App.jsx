@@ -11,11 +11,14 @@ import { Greeting } from "./Greeting";
 import { UserCard } from "./UserCard";
 import { CardWrapper } from "./CardWrapper";
 import { UserDetails } from "./UserDetails";
+import { RoleLists } from "./RoleLists";
 import "./index.css";
 
 function App() {
   return (
     <div>
+      <RoleLists />
+
       <UserDetails
         name="Spiderman"
         isOnline={true}

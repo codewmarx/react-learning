@@ -10,6 +10,7 @@ export const UserDetails = ({
     return null;
   }
 
+  //using variables for complex logic
   let roleBadge = null;
   if (role === "admin") {
     roleBadge = <span>♛ Admin</span>;
